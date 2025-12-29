@@ -61,7 +61,7 @@ function validateForm() {
             buttonText.disabled = false;
         }, 2000);
 
-        return false;
+        return true;
     }
 
     return false;
@@ -69,4 +69,5 @@ function validateForm() {
 
 function toggleMenu() {
     document.querySelector(".navBar").classList.toggle("show");
+
 }
