@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safeer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Jost Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="topRibbon">
+
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
+        
+        <h1 id="portfolio">Portfolio</h1>
+
+        <ul class="navBar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+    </div>
+
+    <section id="Home">
+
+        <div class="info">
+            <h1 id="name">Safeer Zubair</h1>
+            <h3 id="student">Computer Science Student</h3>
+            <h3 class="description">Passionate and motivated about building innovative solutions through code and create meaningful digital experiences.</p>
+        </div>
+
+        <img src="Images/headshot.png" id="headshot">
+
+    </section>
+
+    <section id="About">
+
+        <h1 class="section-title">About Me</h1>
+        <p class="description" id="about-description">I'm a dedicated computer science student with a strong passion for software development and problem-solving. I enjoy working on challenging projects that push my technical skills and creativity.</p>
+        <div class="cards">
+            <h4 id="card-title">Education</h4>
+            <p id="about-ed">Bachelor of Science in Computer Science with Artificial Intelligence (Reading)</p>
+        </div>
+
+    </section>
+
+    <section id="Skills">
+
+        <h1 class="section-title">Skills</h1>
+
+        <div class="all-cards">
+
+            <div class="cards" style="width: 300px; height: 100%;">
+
+                <h4 id="card-title" style="text-align: left; font-size: 1.3rem;">Programming Languages</h4>
+                <p id="card-text">JAVA</p>
+                <div class="skill-bar">
+                    <div class="skill java"></div>
+                </div>
+
+                <p id="card-text">Python</p>
+                <div class="skill-bar">
+                    <div class="skill python"></div>
+                </div>
+                
+                <p id="card-text">C++</p>
+                <div class="skill-bar">
+                    <div class="skill cpp"></div>
+                </div>
+
+                <p id="card-text">Prolog</p>
+                <div class="skill-bar">
+                    <div class="skill prolog"></div>
+                </div> 
+
+            </div>
+
+            <div class="cards" style="width: 300px; height: 100%;">
+
+                <h4 id="card-title" style="text-align: left; font-size: 1.3rem;">Web Development</h4>
+                <p id="card-text">HTML/CSS</p>
+                <div class="skill-bar">
+                    <div class="skill html"></div>
+                </div>
+
+                <p id="card-text">React.js</p>
+                <div class="skill-bar">
+                    <div class="skill react"></div>
+                </div>
+
+                <p id="card-text">Tailwind.css</p>
+                <div class="skill-bar">
+                    <div class="skill tailwind"></div>
+                </div>
+                
+                <p id="card-text">Spring Boot</p>
+                <div class="skill-bar">
+                    <div class="skill sb"></div>
+                </div> 
+
+            </div>
+
+            <div class="cards" style="width: 300px; height: 100%;">
+
+                <h4 id="card-title" style="text-align: left; font-size: 1.3rem;">Tools & Technologies</h4>
+                <p id="card-text">SQL</p>
+                <div class="skill-bar">
+                    <div class="skill sql"></div>
+                </div>
+
+                <p id="card-text">VS Code / IntelliJ IDEA</p>
+                <div class="skill-bar">
+                    <div class="skill ide"></div>
+                </div>
+                
+                <p id="card-text">REST APIs</p>
+                <div class="skill-bar">
+                    <div class="skill rest"></div>
+                </div> 
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="Projects">
+
+        <h1 class="section-title">Projects</h1>
+
+        <div class="all-cards">
+
+            <div class="cards" style="width: 500px; height: 100%;">
+
+                <h4 id="card-title" style="text-align: left; font-size: 1.3rem;">WeKnowWhere - Intelligent Land Recommendation Using Explainable AI</h4>
+
+                <p id="card-text">A web-based application shich combines geospatial data and symbolic AI to evaluate land suitability based on proximity to key facilities, 
+                    road accessibility and city development. The system uses OpenStreetMap data and Prolog-based distance rules to rank land options and provide clear 
+                    explanations for each recommendation.
+                </p>
+                
+                <div class="project-req">
+                    <p id="project-card">Java Spring Boot</p>
+                    <p id="project-card">OSM API</p>
+                    <p id="project-card">SQL</p>
+                    <p id="project-card">React.js</p>
+                    <p id="project-card">Tailwind.css</p>
+                </div>
+            </div>
+                    
+            <div class="cards" style="width: 500px; height: 100%;">
+
+                <h4 id="card-title" style="text-align: left; font-size: 1.3rem;">Hospital Management System</h4>
+
+                <p id="card-text">An application to manage doctor availability, patient appointments, treatment details, automatic billing and secure ogin with features 
+                    add/remove doctors and search patient records created by using Java OOP principles. An interactive GUI with a login security feature is created using
+                    Java Swing.
+                </p>
+                
+                <div class="project-req">
+                    <p id="project-card">Java</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="Contact">
+
+        <h1 class="section-title">Contact</h1>
+
+        <form onsubmit="return validateForm()">
+            <div class="input-sec">
+                <label for="form-name">Name</label>
+                <p class="error" id="name-error"></p>
+                <input class="input-fields" type="text" id="form-name" name="form-name">
+
+                <label for="form-email">Email</label>
+                <p class="error" id="email-error"></p>
+                <input class="input-fields" type="email" id="form-email" name="form-email">
+
+                <label for="form-message">Message</label>
+                <p class="error" id="message-error"></p>
+                <textarea class="input-textArea" type="text" id="form-message" name="form-message"></textarea>
+            </div>    
+
+            <button id="form-submit" type="submit">Send the Message!</button>
+        </form>
+
+    </section>
+
+    <footer>
+
+        <div class="links">
+            <a href=""><img src="Images/github1.png"></a>
+            <a href=""><img src="Images/x1.png"></a>
+        </div>
+
+        <div class="footer-info">
+            <p style="margin-top: 20px;">Email: safeerzubair07@gmail.com</p>
+            <p style="margin-top: 20px;">&copy Safeer Zubair. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

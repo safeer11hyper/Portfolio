@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0015 0%, #1a0033 100%);
+    color: #d7c2ff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.topRibbon {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    gap: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0016;
+    height: 80px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navBar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.navBar li a {
+    display: flex;
+    font-size: 1.1em;
+    padding: 8px 25px;
+    color: #f1e9ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navBar li a:hover {
+    color: #d5c1fc;
+    background-color: rgb(39, 0, 102);
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    background-image: url("Images/bg1.png");
+    background-size: 100%;
+    gap: 90px;
+}
+
+.info {
+    text-align: left;
+}
+
+#headshot {
+    border-radius: 50%;
+    aspect-ratio: 0.92/1;
+    width: 200px;
+    height: 210px;
+    margin-top: 50px;
+    border: 1px solid hsl(267, 95%, 76%);
+}
+
+#portfolio {
+    margin: 0;
+}
+
+#name {
+    width: 500px;
+    margin-top: 50px;
+    color: white;
+    font-size: 60px;
+}
+
+#student {
+    color: #d5c1fc;
+    margin-bottom: 30px;
+}
+
+.description {
+    max-width: 600px;
+    color: white;
+    font-weight: 300;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#about-description {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+#about-ed {
+    color: #c6a3f1;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cards {
+    margin-top: 30px;
+    background-color: hsla(267, 100%, 37%, 0.11);
+    padding: 30px;
+    border: 1px solid hsl(267, 95%, 76%);
+    border-radius: 15px;
+}
+
+#card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.all-cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+#card-text {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-top: 15px;
+}
+
+.skill-bar {
+    margin-top: 10px;
+    width: 100%;
+    height: 12px;
+    border: 2px solid hsl(267, 95%, 76%);
+    border-radius: 15px;  
+}
+
+.skill {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #bb86fc;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: barAnimation 1.5s ease forwards;
+}
+
+.java {
+    width: 60%;
+}
+
+.python {
+    width: 50%;
+}
+
+.cpp {
+    width: 80%;
+}
+
+.prolog {
+    width: 70%;
+}
+
+.html {
+    width: 90%;
+}
+
+.react {
+    width: 60%;
+}
+
+.sb {
+    width: 70%;
+}
+
+.tailwind {
+    width: 60%;
+}
+
+.sql {
+    width: 80%;
+}
+
+.ide {
+    width: 85%;
+}
+
+.rest {
+    width: 60%;
+}
+
+.project-req {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#project-card {
+    background-color: hsla(267, 97%, 77%, 0.13);
+    border:1px solid hsl(268, 35%, 34%);
+    border-radius: 15px;
+    padding: 8px;
+    color: #bb86fc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background-color: hsla(267, 100%, 37%, 0.11);
+    padding: 30px;
+    border: 1px solid hsl(267, 95%, 76%);
+    border-radius: 15px;
+    width: 500px;
+    height: 100%;
+    justify-self: center;
+    font-weight: 500;
+}
+
+.input-sec {
+    display: block;
+}
+
+.input-fields {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsla(267, 95%, 76%, 0.288);
+}
+
+.input-fields:focus {
+    border: 1px solid hsl(267, 95%, 76%);
+    outline: none;
+}
+
+#form-submit {
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(135deg, #4c009c 0%, #1a0033 100%);
+    border: 1px solid hsla(267, 95%, 76%, 0.288);
+    border: 0;
+}
+
+#form-submit:hover {
+    cursor: pointer;
+    animation: buttonAnimation 0.4s ease forwards;
+}
+
+.input-textArea {
+    font-family: 'Segoe UI';
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid hsla(267, 95%, 76%, 0.288);
+}
+
+.input-textArea:focus {
+    border: 1px solid hsl(267, 95%, 76%);
+    outline: none;
+}
+
+@keyframes buttonAnimation {
+    from {
+        border-color: transparent;
+        background: linear-gradient(135deg, #4c009c 0%, #1a0033 100%);
+    }
+    to {
+        font-weight: bold;
+        transform: translateY(-10%);
+        border: 1px solid hsl(267, 95%, 76%);
+        background: hsla(267, 100%, 70%, 0.123);
+    }
+}
+
+@keyframes barAnimation {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+footer {
+    border-top:1px solid rgb(188, 136, 252);
+    background-color: #0a0016;
+    justify-content: center;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links img {
+    width: 50px;   
+}
+
+.footer-info {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.error {
+    display: flow;
+    color: red;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .topRibbon {
+        gap: 0;
+        padding: 0 20px;
+        justify-content: space-between;
+        height: 70px;
+    }
+
+    .navBar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0a0016;
+        flex-direction: column;
+        display: none;
+    }
+
+    .navBar li a {
+        padding: 15px;
+        justify-content: center;
+        border-top: 1px solid #2b004f;
+    }
+
+    .navBar.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 26px;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #Home {
+        flex-direction: column;
+        gap: 30px;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #name {
+        width: auto;
+        font-size: 40px;
+    }
+
+    .description {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #headshot {
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 3rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .all-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-fields,
+    .input-textArea {
+        font-size: 16px;
+    }
+
+    .links img {
+        width: 40px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
